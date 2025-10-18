@@ -1,0 +1,18 @@
+<svg class="size-4 scale-80 xl:scale-100 shrink-0 ml-8" fill="url(#paint0_linear_4199_909)" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+        <g>
+         <rect :class="{'!rotate-180': expanded}" class="transform origin-center transition duration-600 ease-makCursor" height="2" rx="1" width="16" y="7">
+         </rect>
+         <rect :class="{'!rotate-180': expanded}" class="transform origin-center rotate-90 transition duration-600 ease-makCursor" height="2" rx="1" width="16" y="7">
+         </rect>
+        </g>
+        <defs>
+         <lineargradient gradientunits="userSpaceOnUse" id="paint0_linear_4199_909" x1="-1.1" x2="14.74" y1="1.6" y2="17.2">
+          <stop stop-color="#BAA8B4">
+          </stop>
+          <stop offset="1" stop-color="#222121">
+          </stop>
+          <stop offset="1" stop-color="#222121" stop-opacity="0.8">
+          </stop>
+         </lineargradient>
+        </defs>
+       </svg>

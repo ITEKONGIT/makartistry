@@ -1,0 +1,14 @@
+{
+  "carousel_99c1a9fc": {
+    "type": "carousel_data",
+    "file": "components/carousels/carousel_99c1a9fc.js",
+    "original_size": 1189,
+    "source_file": "index.html"
+  },
+  "alpineCarousel_339d80ce": {
+    "type": "alpine_carousel",
+    "file": "components/alpine/alpineCarousel_339d80ce.js",
+    "original_size": 474,
+    "source_file": "index.html"
+  }
+}
