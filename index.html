@@ -18,8 +18,8 @@
   <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet"/>
   <link as="style" href="css/app-BgXTypLU.css" rel="preload">
    <link as="style" href="css/splide-D7wrQ6zr.css" rel="preload">
-    <link href="css/app-Ck6nmiCU.js" rel="modulepreload"/>
-    <link href="css/splide.min-DywBRp_t.js" rel="modulepreload"/>
+    <link href="js/app-Ck6nmiCU.js" rel="modulepreload"/>
+    <link href="js/splide.min-DywBRp_t.js" rel="modulepreload"/>
     <link data-navigate-track="reload" href="css/app-BgXTypLU.css" rel="stylesheet"/>
     <link data-navigate-track="reload" href="css/splide-D7wrQ6zr.css" rel="stylesheet"/>
     <script data-navigate-track="reload" src="js/app-Ck6nmiCU.js" type="module">
@@ -140,13 +140,17 @@
     </a>
     <div class="hidden lg:flex justify-center items-center gap-1 font-synonym-Variable font-[500] text-inherit uppercase lg:text-sm leading-normal">
      <div @click.away="slide = false; $refs.dropdown.blur()" class="relative flex align-center" x-data="{ slide: false }">
-      <span :class="{ 
-        'scale-95 opacity-80': slide, 
-        'hover:text-chineseViolet-100 focus:text-chineseViolet-200': scrolled, 
-        'hover:text-champagne-100 focus:text-champagne-200': !scrolled }" @click=" slide = !slide; $refs.dropdown.blur()" @click.prevent="" class="flex rounded-full p-1 xs:p-1.5 sm:p-2 hover:scale-95 transition-all duration-75 origin-center cursor-pointer font-[425]" x-ref="dropdown">
-       Shop
-       <img src="svg/2398b7fd2136.svg" alt="svg-2398b7fd2136" class="w-4 sm:w-5 external-svg">
-      </span>
+     <span :class="{ 
+  'scale-95 opacity-80': slide, 
+  'text-eerieBlack-100 hover:text-chineseViolet-100 focus:text-chineseViolet-200': scrolled, 
+  'text-floralWhite-90 hover:text-champagne-100 focus:text-champagne-200': !scrolled }" 
+  @click=" slide = !slide; $refs.dropdown.blur()" 
+  @click.prevent="" 
+  class="flex rounded-full p-1 xs:p-1.5 sm:p-2 hover:scale-95 transition-all duration-75 origin-center cursor-pointer font-[425]" 
+  x-ref="dropdown">
+ Shop
+ <img src="svg/2398b7fd2136.svg" alt="svg-2398b7fd2136" class="w-4 sm:w-5 external-svg">
+</span>
       <div :class="{
             'top-[56px] xs:top-[58px] sm:top-[62px] bg-floralWhite-50 text-eerieBlack-200 ring-0': scrolled,
                             'top-[60.5px] xs:top-[62.5px] sm:top-[66.5px] bg-transparent text-floralWhite-90 ring-offset-0 ring-0 ring-floralWhite border-floralWhite-100 border-b border-r border-l': !scrolled
@@ -192,14 +196,18 @@
 ' hover:text-champagne-100 focus:text-champagne-200': !scrolled}" class="flex px-4 py-2 gap-1 hover:scale-95 transition-all duration-500 ease-out font-normal" href="get-inspired.html">
       Get Inspired
      </a>
-     <div @click.away="slide = false; $refs.dropdown.blur()" class="relative flex align-center" x-data="{ slide: false }">
-      <span :class="{ 
-        'scale-95 opacity-80': slide, 
-        'hover:text-chineseViolet-100 focus:text-chineseViolet-200': scrolled, 
-        'hover:text-champagne-100 focus:text-champagne-200': !scrolled }" @click=" slide = !slide; $refs.dropdown.blur()" @click.prevent="" class="flex rounded-full p-1 xs:p-1.5 sm:p-2 hover:scale-95 transition-all duration-75 origin-center cursor-pointer font-[425]" x-ref="dropdown">
-       About Us
-       <img src="svg/2398b7fd2136.svg" alt="svg-2398b7fd2136" class="w-4 sm:w-5 external-svg">
-      </span>
+<div @click.away="slide = false; $refs.dropdown.blur()" class="relative flex align-center" x-data="{ slide: false }">
+  <span :class="{ 
+  'scale-95 opacity-80': slide, 
+  'text-eerieBlack-100 hover:text-chineseViolet-100 focus:text-chineseViolet-200': scrolled, 
+  'text-floralWhite-90 hover:text-champagne-100 focus:text-champagne-200': !scrolled }" 
+  @click=" slide = !slide; $refs.dropdown.blur()" 
+  @click.prevent="" 
+  class="flex rounded-full p-1 xs:p-1.5 sm:p-2 hover:scale-95 transition-all duration-75 origin-center cursor-pointer font-[425]" 
+  x-ref="dropdown">
+ About Us  <!-- ✅ CORRECTED -->
+ <img src="svg/2398b7fd2136.svg" alt="svg-2398b7fd2136" class="w-4 sm:w-5 external-svg">
+</span>
       <div :class="{
             'top-[56px] xs:top-[58px] sm:top-[62px] bg-floralWhite-50 text-eerieBlack-200 ring-0': scrolled,
                             'top-[60.5px] xs:top-[62.5px] sm:top-[66.5px] bg-transparent text-floralWhite-90 ring-offset-0 ring-0 ring-floralWhite border-floralWhite-100 border-b border-r border-l': !scrolled
@@ -833,7 +841,7 @@
      </p>
     </div>
     <div class="flex flex-col md:flex-row w-full gap-8 md:gap-4 h-fit md:h-96">
-     <div class="flex items-end w-full h-72 md:w-3/5 md:h-full p-4 lg:p-5 rounded-lg bg-eerieBlack-40 bg-cover bg-blend-overlay bg-no-repeat bg-center transition-all duration-1000 ease-in-out hover:bg-[length:102.5%]" style="background-image: url('storage.html/blogPosts/thumbnails/01JYDVNQZMD73EBQTWP6HGSYZD.webp');">
+     <div class="flex items-end w-full h-72 md:w-3/5 md:h-full p-4 lg:p-5 rounded-lg bg-eerieBlack-40 bg-cover bg-blend-overlay bg-no-repeat bg-center transition-all duration-1000 ease-in-out hover:bg-[length:102.5%]" style="background-image: url('images/01JYDVNQZMD73EBQTWP6HGSYZD.webp');">
       <div class="flex flex-col gap-5 text-floralWhite-100">
        <div class="flex flex-row gap-2 font-synonym-Variable text-xs font-[450] items-center">
         <span class="uppercase px-2 py-1 rounded-full bg-floralWhite-60 text-eerieBlack-400 backdrop-blur-sm cursor-pointer font-[500]">
@@ -851,7 +859,7 @@
        </a>
       </div>
      </div>
-     <div class="flex items-end w-full h-72 md:w-2/5 md:h-full p-4 lg:p-5 rounded-lg bg-eerieBlack-40 bg-cover bg-blend-overlay bg-no-repeat bg-center transition-all duration-1000 ease-in-out hover:bg-[length:102.5%]" style="background-image: url('storage.html/blogPosts/thumbnails/01JYDWN00NG7C5HBJ6H7JR3QE3.webp');">
+     <div class="flex items-end w-full h-72 md:w-2/5 md:h-full p-4 lg:p-5 rounded-lg bg-eerieBlack-40 bg-cover bg-blend-overlay bg-no-repeat bg-center transition-all duration-1000 ease-in-out hover:bg-[length:102.5%]" style="background-image: url('images/01JYDWN00NG7C5HBJ6H7JR3QE3.webp');">
       <div class="flex flex-col gap-5 text-floralWhite-100">
        <div class="flex flex-row gap-2 font-synonym-Variable text-xs font-[450] items-center">
         <span class="uppercase px-2 py-1 rounded-full bg-floralWhite-60 text-eerieBlack-400 backdrop-blur-sm cursor-pointer font-[500]">
@@ -1035,12 +1043,11 @@
   </footer>
   <div :class="{ 'scale-150 bg-skyMagenta-10 backdrop-blur-[0.5px]': isPointer }" class="hidden md:block bg-chineseViolet-10 backdrop-blur-[1px] fixed w-4 h-4 -mt-2 -ml-2 rounded-full bg-blend-multiply pointer-events-none scale-100 origin-center transition-transform duration-[750ms] ease-makCursor z-full" x-bind:style="{ top: mouseY + 'px', left: mouseX + 'px' }">
   </div>
-  <link as="style" href="css/splide-D7wrQ6zr.css" rel="preload"/>
-  <link href="css/homeCarousel-DSFQeEP2.js" rel="modulepreload"/>
-  <link href="css/splide.min-DywBRp_t.js" rel="modulepreload"/>
-  <link data-navigate-track="reload" href="css/splide-D7wrQ6zr.css" rel="stylesheet"/>
-  <script data-navigate-track="reload" src="js/homeCarousel-DSFQeEP2.js" type="module">
-  </script>
+ <link as="style" href="css/splide-D7wrQ6zr.css" rel="preload"/>
+<link href="js/homeCarousel-DSFQeEP2.js" rel="modulepreload"/>  <!-- ✅ ADDED -->
+<link href="js/splide.min-DywBRp_t.js" rel="modulepreload"/>
+<link data-navigate-track="reload" href="css/splide-D7wrQ6zr.css" rel="stylesheet"/>
+<script data-navigate-track="reload" src="js/homeCarousel-DSFQeEP2.js" type="module"></script>  <!-- ✅ ADDED -->
   <script data-csrf="EN1A1FyFafVhc7h6bYUlbCAliTqEscqb5j55lOeM" data-navigate-once="true" data-update-uri="/livewire/update" src="js/livewire.min.js">
   </script>
   <ul :class="{ 
@@ -1434,6 +1441,8 @@
                 return isPointer;
             }
   </script>
- <script src="js/component-loader.js"></script>
+<script src="components/alpine/alpineCarousel_339d80ce.js"></script>
+
+<script src="js/component-loader.js"></script>
 </body>
 </html>

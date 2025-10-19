@@ -7,7 +7,7 @@ class ComponentLoader {
     async loadComponents() {
         const carouselScripts = [];
         const alpineScripts = [
-            "components/alpine/alpineCarousel_339d80ce.js"
+         
 ];
         
         console.log('Loading components...');
